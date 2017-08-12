@@ -18,7 +18,7 @@ precio_venta = []
 print ('*************** Ingreso de Datos ***************')
 opcion = 's'
 while opcion != 'n':
-	valor = raw_input("Nombre del producto: ")
+	valor = input("Nombre del producto: ")
 	productos.append(valor)
 
 	valor = input("Cantidad del producto: ")
@@ -30,7 +30,7 @@ while opcion != 'n':
 	valor = input("Precio de venta del producto: ")
 	precio_venta.append(valor)
 
-	opcion = raw_input("¿Desea ingresar otro producto? (S/n): ")
+	opcion = input("¿Desea ingresar otro producto? (S/n): ")
 
 inversion = Calculo(cantidad, precio_compra)
 ganancia_total = int(Calculo(cantidad, precio_venta))
