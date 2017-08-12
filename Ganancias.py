@@ -15,7 +15,7 @@ cantidad = []
 precio_compra = []
 precio_venta = []
 
-print '*************** Ingreso de Datos ***************'
+print ('*************** Ingreso de Datos ***************')
 opcion = 's'
 while opcion != 'n':
 	valor = raw_input("Nombre del producto: ")
@@ -37,11 +37,11 @@ ganancia_total = int(Calculo(cantidad, precio_venta))
 ganancia_neta = int(ganancia_total - inversion)
 
 
-print '*************** Resultados del Negocio ***************'
+print ('*************** Resultados del Negocio ***************')
 
 for x in range(0, len(productos)):
-	print '1)',productos[x]+':',Porcentaje(precio_compra[x], precio_venta[x]), '% de ganancia'
+	print ('1)',productos[x]+':',Porcentaje(precio_compra[x], precio_venta[x]), '% de ganancia')
 
-print 'Ganancia Total: ',ganancia_total
-print 'Ganancia Netal: ',ganancia_neta
+print ('Ganancia Total: ',ganancia_total)
+print ('Ganancia Netal: ',ganancia_neta)
 
